@@ -965,7 +965,7 @@ def zong():
 }
 
 response = requests.get('https://mbasic.facebook.com/', cookies=cookies, headers=headers)
-    url = requests.post('https://mbasic.Facebook.com/search-result2.php',headers=head,data=data)
+    
     dta = re.findall("\<div(.*?)</table>",str(url.text))
     open(".tt1.txt","w").write(str(dta))
     ndt = open(".tt1.txt","r").read()
